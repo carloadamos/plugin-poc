@@ -22,6 +22,7 @@ export default {
         hash: '9ed5fbd6c7e09a40',
       },
     ];
+    // Fetch the plugin build file from server
     const plugins = computed(() =>
       pluginList.map((plugin) => {
         return defineAsyncComponent(() =>
