@@ -5,7 +5,6 @@ const path = require('path');
 const PORT = 8200;
 
 const app = express();
-console.log("Current directory:", path.resolve(__dirname, 'build'));
 
 app.use(express.static(path.resolve(__dirname, 'build'), {
   maxAge: '365d',

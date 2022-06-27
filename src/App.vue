@@ -1,6 +1,10 @@
 <template>
-  <component :is="plugins[pluginToShow]" />
-  <button @click="togglePlugin">Toggle Plugin</button>
+  <div><h1>Host app</h1></div>
+  <div>
+    <h1>Display Plugins below:</h1>
+    <component :is="plugins[pluginToShow]" />
+    <button @click="togglePlugin">Toggle Plugin</button>
+  </div>
 </template>
 
 <script>
